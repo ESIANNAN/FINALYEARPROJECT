@@ -17,43 +17,125 @@ export default function SignupScreen() {
     login(form.name)
   }
 
-  return (
-    <div style={{ background: T.cream, minHeight: '100vh', padding: 28 }}>
+  const inputStyle = {
+    background: 'white',
+    border: `1.5px solid ${T.border}`,
+    borderRadius: 12,
+    padding: '14px 16px',
+    fontSize: 15,
+    outline: 'none',
+    width: '100%',
+    transition: 'all 0.2s'
+  }
 
+  return (
+    <div
+      style={{
+        background: T.cream,
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column'
+      }}
+    >
       <StatusBar />
 
-      <h1 style={{ ...playfair }}>Create Account</h1>
+      {/* Header */}
+      {/*<div
+        style={{
+          background: T.black,
+          padding: '40px 24px 60px',
+          textAlign: 'center',
+          borderBottomLeftRadius: 32,
+          borderBottomRightRadius: 32
+        }}
+      >
+        <div
+          style={{
+            ...playfair,
+            fontSize: 32,
+            fontWeight: 900,
+            color: 'white'
+          }}
+        >
+          Sankofa
+        </div>
 
-      <input
-        placeholder="Full Name"
-        value={form.name}
-        onChange={(e) => setForm({ ...form, name: e.target.value })}
-      />
+        <div
+          style={{
+            fontSize: 13,
+            color: 'rgba(255,255,255,0.6)',
+            marginTop: 6
+          }}
+        >
+          Begin your language journey
+        </div>
+      </div>
+        */}
 
-      <input
-        placeholder="Email"
-        value={form.email}
-        onChange={(e) => setForm({ ...form, email: e.target.value })}
-      />
+        
+      {/* Form */}
+      <div
+        style={{
+          flex: 1,
+          padding: '200px 28px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
+          maxWidth: 420,
+          margin: '0 auto',
+          width: '100%'
+        }}
+      >
+        <h2 style={{ ...playfair, marginBottom: 6 }}>
+          Create Account
+        </h2>
 
-      <input
-        type="password"
-        placeholder="Password"
-        value={form.password}
-        onChange={(e) => setForm({ ...form, password: e.target.value })}
-      />
+        <input
+          style={inputStyle}
+          placeholder="Full Name"
+          value={form.name}
+          onChange={(e) => setForm({ ...form, name: e.target.value })}
+        />
 
-      <BtnPrimary onClick={handleSubmit}>
-        Create Account
-      </BtnPrimary>
+        <input
+          style={inputStyle}
+          placeholder="Email"
+          value={form.email}
+          onChange={(e) => setForm({ ...form, email: e.target.value })}
+        />
 
-      <p>
-        Already have an account?{" "}
-        <span onClick={() => navigate('login')}>
-          Log In
-        </span>
-      </p>
+        <input
+          style={inputStyle}
+          type="password"
+          placeholder="Password"
+          value={form.password}
+          onChange={(e) => setForm({ ...form, password: e.target.value })}
+        />
 
+        <BtnPrimary onClick={handleSubmit}>
+          Create Account 
+        </BtnPrimary>
+
+        <div
+          style={{
+            textAlign: 'center',
+            fontSize: 13,
+            color: T.textMuted
+          }}
+        >
+          Already have an account?{" "}
+          <span
+            onClick={() => navigate('login')}
+            style={{
+              color: T.gold,
+              fontWeight: 600,
+              cursor: 'pointer'
+            }}
+          >
+            Log In
+          </span>
+        </div>
+      </div>
     </div>
   )
 }
