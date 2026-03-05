@@ -13,7 +13,7 @@ export default function WelcomeScreen() {
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '60px 28px',
-        background: 'white'
+        background: 'FDF6E3'
       }}
     >
 
@@ -75,7 +75,7 @@ export default function WelcomeScreen() {
             padding: '16px',
             borderRadius: 40,
             border: 'none',
-            background: '#E0E0E0',
+            background: 'white',
             fontSize: 16,
             fontWeight: 500,
             cursor: 'pointer'

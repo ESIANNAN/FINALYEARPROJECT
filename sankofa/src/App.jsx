@@ -12,6 +12,7 @@ import ExploreScreen     from './screens/ExploreScreen'
 import PracticeScreen    from './screens/PracticeScreen'
 import LeaderboardScreen from './screens/LeaderboardScreen'
 import ProfileScreen     from './screens/ProfileScreen'
+import WelcomeScreen from './screens/WelcomeScreen'
 
 // ─── Screen router ────────────────────────────────────────────────────────────
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
 
   const screens = {
     splash:      <SplashScreen />,
+    welcome:     <WelcomeScreen/>,
     auth:        <AuthScreen />,
     onboarding:  <OnboardingScreen />,
     home:        <HomeScreen />,
@@ -36,7 +38,7 @@ function Router() {
 function PhoneShell() {
   const { screen, navigate } = useApp()
 
-  const NAV_DOTS = ['splash', 'auth', 'onboarding', 'home', 'explore', 'profile']
+  const NAV_DOTS = ['splash','welcome','auth', 'onboarding', 'home', 'explore', 'profile']
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>
