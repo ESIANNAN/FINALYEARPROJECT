@@ -68,7 +68,7 @@ export default function WelcomeScreen() {
       >
 
         <button
-          onClick={() => navigate('auth')}
+          onClick={() => navigate('signup')}
           style={{
             width: '100%',
             maxWidth: 320,
@@ -92,7 +92,7 @@ export default function WelcomeScreen() {
         >
           Already have an account?{' '}
           <span
-            onClick={() => navigate('auth')}
+            onClick={() => navigate('login')}
             style={{
               cursor: 'pointer',
               fontWeight: 600

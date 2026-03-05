@@ -4,7 +4,8 @@ import { T, mono } from './styles/theme'
 
 // Screens
 import SplashScreen      from './screens/SplashScreen'
-import AuthScreen        from './screens/AuthScreen'
+import LoginScreen from './screens/LoginScreen'
+import SignupScreen from './screens/SignupScreen'
 import OnboardingScreen  from './screens/OnboardingScreen'
 import HomeScreen        from './screens/HomeScreen'
 import LessonScreen      from './screens/LessonScreen'
@@ -21,7 +22,9 @@ function Router() {
   const screens = {
     splash:      <SplashScreen />,
     welcome:     <WelcomeScreen/>,
-    auth:        <AuthScreen />,
+    login:       <LoginScreen/>,
+    signup:      <SignupScreen/>,
+    //auth:        <AuthScreen />,
     onboarding:  <OnboardingScreen />,
     home:        <HomeScreen />,
     lesson:      <LessonScreen />,
