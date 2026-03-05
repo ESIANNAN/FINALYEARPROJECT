@@ -70,9 +70,7 @@ export default function AuthScreen() {
         }} />
         <StatusBar light />
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '20px 24px 0', gap: 8 }}>
-          <div className="animate-float" style={{ width: 64, height: 64, background: T.gold, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 30, boxShadow: `0 0 24px ${T.gold}66`, marginBottom: 4 }}>
-            🦅
-          </div>
+          
           <div style={{ ...playfair, fontSize: 28, fontWeight: 900, color: 'white' }}>Sankofa</div>
           <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)' }}>Your journey to Ghanaian languages begins</div>
         </div>
