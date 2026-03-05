@@ -71,7 +71,7 @@ export default function SplashScreen() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          gap: 100,
+          gap: 10,
         }}
       >
        <div
