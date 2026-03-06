@@ -4,6 +4,10 @@ import { useApp } from '../context/AppContext'
 import StatusBar from '../components/StatusBar'
 import BtnPrimary from '../components/BtnPrimary'
 
+import { createUserWithEmailAndPassword, sendEmailVerification } from "firebase/auth"
+import { auth } from "../firebase"
+
+
 export default function SignupScreen() {
   const { login, navigate } = useApp()
 
@@ -13,9 +17,28 @@ export default function SignupScreen() {
     password: ''
   })
 
-  const handleSubmit = () => {
-    login(form.name)
+ const handleSubmit = async () => {
+  try {
+
+    const userCredential = await createUserWithEmailAndPassword(
+      auth,
+      form.email,
+      form.password
+    )
+
+    const user = userCredential.user
+
+    // verification email
+    await sendEmailVerification(user)
+
+    alert("Verification email sent. Please check your inbox.")
+
+    navigate("login")
+
+  } catch (error) {
+    alert(error.message)
   }
+}
 
   const inputStyle = {
     background: 'white',

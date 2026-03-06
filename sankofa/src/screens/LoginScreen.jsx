@@ -4,6 +4,10 @@ import { useApp } from '../context/AppContext'
 import StatusBar from '../components/StatusBar'
 import BtnPrimary from '../components/BtnPrimary'
 
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
+
+
 export default function LoginScreen() {
   const { login, navigate } = useApp()
 
@@ -12,9 +16,29 @@ export default function LoginScreen() {
     password: ''
   })
 
-  const handleSubmit = () => {
-    login('User')
+ const handleSubmit = async () => {
+  try {
+
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      form.email,
+      form.password
+    )
+
+    const user = userCredential.user
+
+    // Check if email is verified
+    if (!user.emailVerified) {
+      alert("Please verify your email before logging in.")
+      return
+    }
+
+    login(user.email)
+
+  } catch (error) {
+    alert(error.message)
   }
+}
 
   const inputStyle = {
     background: 'white',
