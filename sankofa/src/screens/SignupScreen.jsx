@@ -31,9 +31,8 @@ export default function SignupScreen() {
     // verification email
     await sendEmailVerification(user)
 
-    alert("Verification email sent. Please check your inbox.")
-
-    navigate("login")
+    alert("Account created successfully!")
+    navigate("onboarding")
 
   } catch (error) {
     alert(error.message)
