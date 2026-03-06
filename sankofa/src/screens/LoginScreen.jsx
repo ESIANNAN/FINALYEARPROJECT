@@ -34,6 +34,7 @@ export default function LoginScreen() {
     }
 
     login(user.email)
+    navigate("home")
 
   } catch (error) {
     alert(error.message)

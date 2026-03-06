@@ -36,19 +36,19 @@ function WordOfDay() {
       <div style={{ width: 52, height: 52, background: T.softGold, borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24 }}>📜</div>
       <div style={{ flex: 1 }}>
         <div style={{ fontSize: 11, fontWeight: 700, color: T.textMuted, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 4 }}>Word of the Day</div>
-        <div style={{ ...playfair, fontSize: 20, fontWeight: 900, color: T.gold }}>Sankofa</div>
-        <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2 }}>"Go back and fetch it" — Akan proverb</div>
+       {/*} <div style={{ ...playfair, fontSize: 20, fontWeight: 900, color: T.gold }}>Sankofa</div>*/}
+       {/*} <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2 }}>"Go back and fetch it" — Akan proverb</div>*/}
       </div>
-      <div style={{ fontSize: 22, cursor: 'pointer' }}>🔊</div>
+      {/*<div style={{ fontSize: 22, cursor: 'pointer' }}>🔊</div>*/}
     </div>
   )
 }
 
 function ProgressCards({ stats }) {
   const cards = [
-    { icon: '🔥', num: stats.streak,           label: 'Day Streak'   },
-    { icon: '⭐', num: stats.lessonsCompleted,  label: 'Lessons Done' },
-    { icon: '🏆', num: stats.badges,            label: 'Badges'       },
+    { icon: '',label: 'Day Streak'   },
+    { icon: '',label: 'Lessons Done' },
+    { icon: '', label: 'Badges'       },
   ]
   return (
     <div style={{ display: 'flex', gap: 10, marginBottom: 4 }}>
@@ -112,7 +112,7 @@ export default function HomeScreen() {
         <div style={{ position: 'absolute', inset: 0, backgroundImage: `repeating-linear-gradient(60deg, ${T.gold}0a 0, ${T.gold}0a 1px, transparent 1px, transparent 20px)` }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative', zIndex: 1, paddingTop: 8, marginBottom: 14 }}>
           <div>
-            <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)' }}>Mema wo akye 👋</div>
+           {/*} <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)' }}>Mema wo akye 👋</div>*/}
             <div style={{ ...playfair, fontSize: 22, color: 'white', fontWeight: 700 }}>{user}!</div>
           </div>
           <div style={{ width: 42, height: 42, borderRadius: '50%', background: `linear-gradient(135deg,${T.gold},${T.red})`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, fontWeight: 700, color: 'white', border: '2px solid rgba(255,255,255,0.2)' }}>
@@ -120,24 +120,26 @@ export default function HomeScreen() {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 8, position: 'relative', zIndex: 1, flexWrap: 'wrap' }}>
-          <StatPill icon="🔥" label={`${stats.streak} day streak`} gold />
-          <StatPill icon="⚡" label={`${stats.xp} XP`} />
-          <StatPill icon="💎" label={`${stats.gems}`} />
+         {/*  <StatPill icon="🔥" label={`${stats.streak} day streak`} gold />
+         <StatPill icon="⚡" label={`${stats.xp} XP`} />
+          <StatPill icon="💎" label={`${stats.gems}`} />*/}
         </div>
       </div>
       <div style={{ height: 24, background: T.cream, borderRadius: '24px 24px 0 0', marginTop: -4 }} />
 
       {/* Scrollable content */}
+      
       <div style={{ flex: 1, overflowY: 'auto', padding: '4px 20px 100px' }}>
         <SectionLabel>Today's Challenge</SectionLabel>
-        <DailyCard onStart={() => startLesson('greetings')} />
+        
+        {/*<DailyCard onStart={() => startLesson('greetings')} />*/}
         <WordOfDay />
 
         <SectionLabel style={{ marginTop: 20 }}>Your Progress</SectionLabel>
         <ProgressCards stats={stats} />
 
         <SectionLabel style={{ marginTop: 20 }}>Twi Journey</SectionLabel>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+       {/*} <div style={{ display: 'flex', flexDirection: 'column' }}>
           {LESSON_PATH.map((node, i) => (
             <div key={node.id}>
               <LessonNode node={node} onStart={startLesson} />
@@ -146,10 +148,10 @@ export default function HomeScreen() {
               )}
             </div>
           ))}
-        </div>
+        </div>*/}
       </div>
 
-      <BottomNav active="home" onNav={handleNav} />
+     {/*} <BottomNav active="home" onNav={handleNav} />*/}
     </div>
   )
 }

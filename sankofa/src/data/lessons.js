@@ -129,20 +129,22 @@ export const BADGES = [
 
 // ─── LANGUAGES ─────────────────────────────────────────────────────────────────
 export const LANGUAGES = [
-  { id: 'twi',     flag: '🌿', name: 'Twi',     region: 'Ashanti' },
-  { id: 'ga',      flag: '🌊', name: 'Ga',      region: 'Accra'   },
-  { id: 'ewe',     flag: '🔥', name: 'Ewe',     region: 'Volta'   },
+  { id: 'twi',     flag: '', name: 'Twi',     region: 'Ashanti' },
+  { id: 'ga',      flag: '', name: 'Ga',      region: 'Accra'   },
+  { id: 'fante',   flag: '', name: 'Fante',   region: 'Central' },
+  {/*
+  { id: 'ewe',     flag: '🔥', name: 'Ewe',     region: 'Volta'},
   { id: 'dagbani', flag: '⭐', name: 'Dagbani', region: 'Northern'},
-  { id: 'fante',   flag: '🌺', name: 'Fante',   region: 'Central' },
   { id: 'hausa',   flag: '🦁', name: 'Hausa',   region: 'Northern'},
+   */}
 ]
 
 // ─── LEARNING GOALS ────────────────────────────────────────────────────────────
 export const GOALS = [
-  { id: 'greetings', icon: '👋', label: 'Basic Greetings',  sub: 'Say hello & goodbye'   },
-  { id: 'convo',     icon: '💬', label: 'Conversational',   sub: 'Hold a conversation'   },
-  { id: 'heritage',  icon: '🏡', label: 'Cultural Heritage',sub: 'Connect with roots'    },
-  { id: 'fluency',   icon: '📖', label: 'Full Fluency',     sub: 'Read, write & speak'   },
+  { id: 'greetings', icon: '', label: 'Basic Greetings',  sub: 'Say hello & goodbye'   },
+  { id: 'convo',     icon: '', label: 'Conversational',   sub: 'Hold a conversation'   },
+  { id: 'heritage',  icon: '', label: 'Cultural Heritage',sub: 'Connect with roots'    },
+  { id: 'fluency',   icon: '', label: 'Full Fluency',     sub: 'Read, write & speak'   },
 ]
 
 // ─── QUICK PHRASES ─────────────────────────────────────────────────────────────

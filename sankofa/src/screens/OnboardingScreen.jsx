@@ -17,12 +17,12 @@ function StepLanguage({ lang, setLang }) {
   return (
     <div className="animate-slide-in-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 24px' }}>
       <div style={{ width: 160, height: 160, background: 'linear-gradient(135deg,#FEF0C7,#FDDDA0)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, marginBottom: 28, boxShadow: `0 8px 32px ${T.gold}40`, position: 'relative' }}>
-        🗣️
+        {/*🗣️
         <div style={{ position: 'absolute', top: 8, right: -16, background: T.gold, color: T.black, fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 99, ...mono }}>Twi</div>
-        <div style={{ position: 'absolute', bottom: 12, left: -20, background: T.green, color: 'white', fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 99, ...mono }}>Ga · Ewe</div>
+        <div style={{ position: 'absolute', bottom: 12, left: -20, background: T.green, color: 'white', fontSize: 11, fontWeight: 700, padding: '5px 10px', borderRadius: 99, ...mono }}>Ga · Ewe</div>*/}
       </div>
       <div style={{ ...playfair, fontSize: 26, fontWeight: 900, textAlign: 'center', marginBottom: 10 }}>Which language will you learn?</div>
-      <div style={{ fontSize: 14, color: T.textMuted, textAlign: 'center', marginBottom: 24 }}>Start with one — you can always add more later.</div>
+      <div style={{ fontSize: 14, color: T.textMuted, textAlign: 'center', marginBottom: 24 }}>Start with one — you can always add more later</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, width: '100%' }}>
         {LANGUAGES.map(l => (
           <div
@@ -51,7 +51,7 @@ function StepLanguage({ lang, setLang }) {
 function StepGoal({ goal, setGoal }) {
   return (
     <div className="animate-slide-in-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 24px' }}>
-      <div style={{ width: 160, height: 160, background: 'linear-gradient(135deg,#d4f4e2,#a8e6c1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, marginBottom: 28, boxShadow: '0 8px 32px rgba(39,174,96,0.25)' }}>🎯</div>
+      <div style={{ width: 160, height: 160, background: 'linear-gradient(135deg,#d4f4e2,#a8e6c1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, marginBottom: 28, boxShadow: '0 8px 32px rgba(39,174,96,0.25)' }}>{/*🎯*/}</div>
       <div style={{ ...playfair, fontSize: 26, fontWeight: 900, textAlign: 'center', marginBottom: 10 }}>What's your learning goal?</div>
       <div style={{ fontSize: 14, color: T.textMuted, textAlign: 'center', marginBottom: 24 }}>This helps us personalise your journey.</div>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, width: '100%' }}>
@@ -81,7 +81,7 @@ function StepGoal({ goal, setGoal }) {
 function StepDaily({ daily, setDaily }) {
   return (
     <div className="animate-slide-in-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 24px' }}>
-      <div style={{ width: 160, height: 160, background: 'linear-gradient(135deg,#fdecea,#f8c4c0)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, marginBottom: 28 }}>⏱️</div>
+      <div style={{ width: 160, height: 160, background: 'linear-gradient(135deg,#fdecea,#f8c4c0)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, marginBottom: 28 }}>{/*⏱️*/}</div>
       <div style={{ ...playfair, fontSize: 26, fontWeight: 900, textAlign: 'center', marginBottom: 10 }}>Set your daily goal</div>
       <div style={{ fontSize: 14, color: T.textMuted, textAlign: 'center', marginBottom: 24 }}>Consistency beats intensity. Pick what's realistic.</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 10, width: '100%' }}>
@@ -116,13 +116,13 @@ function StepReady({ lang, goal, daily }) {
   const langObj = LANGUAGES.find(l => l.id === lang)
   const goalObj = GOALS.find(g => g.id === goal)
   const summary = [
-    { icon: '🌿', label: `Learning ${langObj?.name || 'Twi'}` },
-    { icon: '🎯', label: `Goal: ${goalObj?.label || 'Greetings'}` },
-    { icon: '⏱️', label: `${daily} minutes per day` },
+    { icon: '', label: `Learning ${langObj?.name || 'Twi'}` },
+    { icon: '', label: `Goal: ${goalObj?.label || 'Greetings'}` },
+    { icon: '', label: `${daily} minutes per day` },
   ]
   return (
     <div className="animate-slide-in-right" style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '0 24px', gap: 20 }}>
-      <div className="animate-bounce-in" style={{ width: 160, height: 160, background: T.gold, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, boxShadow: `0 0 60px ${T.gold}66` }}>🦅</div>
+      <div className="animate-bounce-in" style={{ width: 160, height: 160, background: T.gold, borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 72, boxShadow: `0 0 60px ${T.gold}66` }}></div>
       <div style={{ ...playfair, fontSize: 32, fontWeight: 900, textAlign: 'center' }}>You're all set!</div>
       <div style={{ fontSize: 15, color: T.textMuted, textAlign: 'center', lineHeight: 1.6 }}>
         Your personalised <strong style={{ color: T.textMain }}>{langObj?.name || 'Twi'}</strong> learning journey is ready.
@@ -188,7 +188,7 @@ export default function OnboardingScreen() {
           </button>
         )}
         <BtnPrimary onClick={() => step < TOTAL - 1 ? setStep(s => s + 1) : navigate('home')}>
-          {step === TOTAL - 1 ? 'Start Learning 🦅' : 'Continue →'}
+          {step === TOTAL - 1 ? 'Start Learning' : 'Continue →'}
         </BtnPrimary>
       </div>
     </div>
