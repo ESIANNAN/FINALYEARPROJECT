@@ -36,10 +36,10 @@ function WordOfDay() {
       <div style={{ width: 52, height: 52, background: T.softGold, borderRadius: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 24 }}>📜</div>
       <div style={{ flex: 1 }}>
         <div style={{ fontSize: 11, fontWeight: 700, color: T.textMuted, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 4 }}>Word of the Day</div>
-       {/*} <div style={{ ...playfair, fontSize: 20, fontWeight: 900, color: T.gold }}>Sankofa</div>*/}
-       {/*} <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2 }}>"Go back and fetch it" — Akan proverb</div>*/}
+        <div style={{ ...playfair, fontSize: 20, fontWeight: 900, color: T.gold }}>Sankofa</div>
+       <div style={{ fontSize: 12, color: T.textMuted, marginTop: 2 }}>"Go back and fetch it" — Akan proverb</div>
       </div>
-      {/*<div style={{ fontSize: 22, cursor: 'pointer' }}>🔊</div>*/}
+      <div style={{ fontSize: 22, cursor: 'pointer' }}>🔊</div>
     </div>
   )
 }

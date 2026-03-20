@@ -141,10 +141,10 @@ export const LANGUAGES = [
 
 // ─── LEARNING GOALS ────────────────────────────────────────────────────────────
 export const GOALS = [
-  { id: 'greetings', icon: '', label: 'Basic Greetings',  sub: 'Say hello & goodbye'   },
-  { id: 'convo',     icon: '', label: 'Conversational',   sub: 'Hold a conversation'   },
-  { id: 'heritage',  icon: '', label: 'Cultural Heritage',sub: 'Connect with roots'    },
-  { id: 'fluency',   icon: '', label: 'Full Fluency',     sub: 'Read, write & speak'   },
+  { id: 'beginner', icon: '', label: 'Beginner',  sub: 'I am new to the language'   },
+  { id: 'intermediate',     icon: '', label: 'Intermediate',   sub: 'I know some basics'   },
+  { id: 'advanced',  icon: '', label: 'Advanced',sub: 'I can form sentences'    },
+  { id: 'fluency',   icon: '', label: 'Legend',     sub: 'I want mastery and culture'   },
 ]
 
 // ─── QUICK PHRASES ─────────────────────────────────────────────────────────────
