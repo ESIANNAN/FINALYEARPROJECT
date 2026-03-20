@@ -5,7 +5,9 @@ const NAV_ITEMS = [
   { id: 'explore',     icon: '🗺️', label: 'Explore' },
   { id: 'practice',    icon: '⚔️', label: 'Practice'},
   { id: 'leaderboard', icon: '🏆', label: 'Leaders' },
+  { id: 'journal',     icon: '📖', label: 'Journal' }, 
   { id: 'profile',     icon: '👤', label: 'Profile' },
+
 ]
 
 /**

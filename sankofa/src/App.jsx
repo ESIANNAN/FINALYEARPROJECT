@@ -14,6 +14,7 @@ import PracticeScreen    from './screens/PracticeScreen'
 import LeaderboardScreen from './screens/LeaderboardScreen'
 import ProfileScreen     from './screens/ProfileScreen'
 import WelcomeScreen from './screens/WelcomeScreen'
+import JournalScreen from './screens/JournalScreen'
 
 // ─── Screen router ────────────────────────────────────────────────────────────
 function Router() {
@@ -32,6 +33,7 @@ function Router() {
     practice:    <PracticeScreen />,
     leaderboard: <LeaderboardScreen />,
     profile:     <ProfileScreen />,
+    journal:      <JournalScreen/>
   }
 
   return screens[screen] ?? <HomeScreen />
