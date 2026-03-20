@@ -26,7 +26,7 @@ export default function ExploreScreen() {
 
         {/* Search bar */}
         <div style={{ background: 'white', border: `1.5px solid ${T.border}`, borderRadius: 12, padding: '12px 16px', display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
-          <span style={{ fontSize: 18 }}>🔍</span>
+          <span style={{ fontSize: 18 }}>{/*🔍*/}</span>
           <input
             placeholder="Search words, phrases..."
             style={{ border: 'none', outline: 'none', fontSize: 14, color: T.textMain, flex: 1, background: 'transparent' }}
@@ -59,7 +59,7 @@ export default function ExploreScreen() {
               <div style={{ fontSize: 13, color: T.textMuted, marginTop: 2 }}>{p.eng}</div>
             </div>
             <div style={{ background: T.softGold, color: T.earth, fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 99, ...mono }}>{p.tag}</div>
-            <span style={{ fontSize: 18, cursor: 'pointer' }}>🔊</span>
+            <span style={{ fontSize: 18, cursor: 'pointer' }}>{/*🔊*/}</span>
           </div>
         ))}
       </div>

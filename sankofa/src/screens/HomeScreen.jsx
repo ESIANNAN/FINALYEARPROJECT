@@ -139,7 +139,7 @@ export default function HomeScreen() {
         <ProgressCards stats={stats} />
 
         <SectionLabel style={{ marginTop: 20 }}>Twi Journey</SectionLabel>
-       {/*} <div style={{ display: 'flex', flexDirection: 'column' }}>
+       <div style={{ display: 'flex', flexDirection: 'column' }}>
           {LESSON_PATH.map((node, i) => (
             <div key={node.id}>
               <LessonNode node={node} onStart={startLesson} />
@@ -148,10 +148,10 @@ export default function HomeScreen() {
               )}
             </div>
           ))}
-        </div>*/}
+        </div>
       </div>
 
-     {/*} <BottomNav active="home" onNav={handleNav} />*/}
+      <BottomNav active="home" onNav={handleNav} />
     </div>
   )
 }
