@@ -120,9 +120,9 @@ export default function HomeScreen() {
           </div>
         </div>
         <div style={{ display: 'flex', gap: 8, position: 'relative', zIndex: 1, flexWrap: 'wrap' }}>
-         {/*  <StatPill icon="🔥" label={`${stats.streak} day streak`} gold />
+          <StatPill icon="🔥" label={`${stats.streak} day streak`} gold />
          <StatPill icon="⚡" label={`${stats.xp} XP`} />
-          <StatPill icon="💎" label={`${stats.gems}`} />*/}
+          <StatPill icon="💎" label={`${stats.gems}`} />
         </div>
       </div>
       <div style={{ height: 24, background: T.cream, borderRadius: '24px 24px 0 0', marginTop: -4 }} />

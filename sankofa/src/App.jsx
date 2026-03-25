@@ -33,7 +33,7 @@ function Router() {
     practice:    <PracticeScreen />,
     leaderboard: <LeaderboardScreen />,
     profile:     <ProfileScreen />,
-    journal:      <JournalScreen/>
+    journal:      <JournalScreen/>,
   }
 
   return screens[screen] ?? <HomeScreen />
@@ -43,7 +43,7 @@ function Router() {
 function PhoneShell() {
   const { screen, navigate } = useApp()
 
-  const NAV_DOTS = ['splash','welcome','auth', 'onboarding', 'home', 'explore', 'profile']
+  const NAV_DOTS = ['splash','welcome', 'onboarding', 'home', 'explore', 'profile','journal']
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12 }}>

@@ -28,7 +28,7 @@ export function AppProvider({ children }) {
   }
 
   const handleNav = (dest) => {
-    const allowed = ['home', 'explore', 'practice', 'leaderboard', 'profile']
+    const allowed = ['home', 'explore', 'practice', 'leaderboard', 'profile','journal']
     if (allowed.includes(dest)) navigate(dest)
   }
 
