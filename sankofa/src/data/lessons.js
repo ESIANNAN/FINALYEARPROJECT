@@ -129,14 +129,11 @@ export const BADGES = [
 
 // ─── LANGUAGES ─────────────────────────────────────────────────────────────────
 export const LANGUAGES = [
-  { id: 'twi',     flag: '', name: 'Twi',     region: 'Ashanti' },
-  { id: 'ga',      flag: '', name: 'Ga',      region: 'Accra'   },
-  { id: 'fante',   flag: '', name: 'Fante',   region: 'Central' },
-  {/*
+  { id: 'twi',     flag: '🔥', name: 'Twi',     region: 'Ashanti' },
+  { id: 'ga',      flag: '🔥', name: 'Ga',      region: 'Accra'   },
+  { id: 'fante',   flag: '🔥', name: 'Fante',   region: 'Central' },
   { id: 'ewe',     flag: '🔥', name: 'Ewe',     region: 'Volta'},
-  { id: 'dagbani', flag: '⭐', name: 'Dagbani', region: 'Northern'},
-  { id: 'hausa',   flag: '🦁', name: 'Hausa',   region: 'Northern'},
-   */}
+
 ]
 
 // ─── LEARNING GOALS ────────────────────────────────────────────────────────────
